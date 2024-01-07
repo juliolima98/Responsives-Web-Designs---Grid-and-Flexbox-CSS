@@ -48,3 +48,23 @@ p {
 }
 
 /** CODIGO AQUI **/
+@media (min-width: 768px) {
+    .con-sidebar{
+        display: grid;
+        grid-template-columns: 1fr 3fr;
+        column-gap: 4rem;
+        grid-auto-flow: column; /* Propiedad que deja el acomodo de las columnas a CSS Grid */
+    }
+
+    aside{
+        grid-column: 1/2;
+    }
+
+    /* aside{
+        grid-column: 1/2;
+        grid-row: 1/2;      OTRA MANERA DE HACER(ES UNA FORMA UN POCO MAS LARGA)
+    }
+    article{
+        grid-column: 2/3;
+    } */
+}
